@@ -23,7 +23,7 @@ def mysql_config(what):
         if ret/256 > 1:
             raise EnvironmentError("%s not found" % (mysql_config.path,))
     return data
-mysql_config.path = "mysql_config"
+mysql_config.path = "/usr/local/mysql/bin/mysql_config"
 
 def get_config():
     import os, sys
